@@ -19,23 +19,9 @@ public:
     void Welcome();
 };
 void variable::Welcome() {
-REPEAT: std::cout << "Enter your name" <<std::endl;
+ std::cout << "Enter your name" <<std::endl;
     std::cin >> name;
     std::cout << name << "!"<<std::endl;
-    std::cout << "Type 1 to login or type 2 to Signup:"<<std::endl;
-    std::cin >> log;
-    if (log == 1) {
-        sign_in();
-    }
-    if (log == 2) {
-        sign_up();
-    }
-    else {
-        std::cout << "You typed wrong "<<std::endl;
-        goto REPEAT;
-    
-    }
-
 }
 void variable::sign_in() {
     std::cout << "Enter your password sir:" << std::endl;;
@@ -77,6 +63,14 @@ int main() {
 
    
   v.Welcome();
+  REPEAT:std::cout << "Type 1 to login or type 2 to Signup:" << std::endl;
+  std::cin>> v.log;
+  if (v.log == 1) {
+      v.sign_in();
+  }
+  if (v.log == 2) {
+      v.sign_up();
+  }
   v.loading();
 }
 
