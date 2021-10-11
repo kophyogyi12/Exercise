@@ -12,8 +12,8 @@ public:
 		age = 40;
 		Daughter d;
 
-	cout <<"Daughter name is:"<<d.d_name;
-cout << "Daughter age is:"<<d.d_age;
+		cout << "Daughter name is:" << d.d_name << std::endl;
+		cout << "Daughter age is:" << d.d_age << std::endl;
 	}
 };
 
@@ -33,6 +33,6 @@ int main()
 {
 	Mother* M = new Mother;
 	M->Name();
-cout << "Mother name is:"<<M->name;
+	cout << "Mother name is:" << M->name << std::endl;
 cout << "Mother age is:"<<M->age;
 }
