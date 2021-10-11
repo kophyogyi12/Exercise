@@ -33,6 +33,6 @@ int main()
 {
 	Mother* M = new Mother;
 	M->Name();
-cout << M->name;
-cout << M->age;
+cout << "Mother name is:"<<M->name;
+cout << "Mother age is:"<<M->age;
 }
